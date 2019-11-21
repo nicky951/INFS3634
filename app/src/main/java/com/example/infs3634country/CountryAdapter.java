@@ -1,14 +1,16 @@
 package com.example.infs3634country;
 
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 
 import java.util.List;
 
@@ -16,6 +18,9 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
 
     private List<Country> countryToAdapt;
 
+    public void setData(List<Country> countryToAdapt) {
+        this.countryToAdapt = countryToAdapt;
+    }
 
     @NonNull
     @Override
@@ -33,6 +38,11 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
         final Country countryAtPosition = countryToAdapt.get(position);
 
         holder.bind(countryAtPosition);
+
+        String url = countryAtPosition.getFlag();
+
+        Utils.fetchSvg(holder.itemView.getContext(), url, holder.flag);
+
     }
 
     @Override
@@ -70,7 +80,8 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
         }
 
         public void bind(final Country country) {
-
+            name.setText(country.getName());
         }
+
     }
 }

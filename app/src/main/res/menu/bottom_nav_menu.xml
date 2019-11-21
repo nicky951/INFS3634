@@ -8,7 +8,7 @@
     <item
         android:id="@+id/nav_quiz"
         android:icon="@drawable/quiz"
-        android:title="Favourites" />
+        android:title="Quiz" />
 
     <item
         android:id="@+id/nav_profile"

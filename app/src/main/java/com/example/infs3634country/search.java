@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +21,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
+
+import java.util.Arrays;
+import java.util.List;
 
 
 /**
@@ -42,6 +46,9 @@ public class search extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+
+
+        Toast.makeText(getContext(),"Please scroll slowly and allow Images to load", Toast.LENGTH_SHORT).show();
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         recyclerView = view.findViewById(R.id.searchRecycler);
 
@@ -49,7 +56,7 @@ public class search extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
 
-        CountryAdapter countryAdapter = new CountryAdapter();
+        final CountryAdapter countryAdapter = new CountryAdapter();
 
         final RequestQueue requestQueue =  Volley.newRequestQueue(getActivity());
 
@@ -62,8 +69,17 @@ public class search extends Fragment {
 
                 Gson gson = new Gson();
                 Country[] countries = gson.fromJson(response, Country[].class);
+                List<Country> countryList = Arrays.asList(countries);
 
                 System.out.println(countries[0].getName());
+
+                CountryDatabase db = Room.databaseBuilder(getContext(), CountryDatabase.class , "database_name").allowMainThreadQueries().build();
+
+                db.countryDao().deleteTable();
+                db.countryDao().insert(countryList);
+
+                countryAdapter.setData(db.countryDao().getCountry());
+                recyclerView.setAdapter(countryAdapter);
 
             }
 

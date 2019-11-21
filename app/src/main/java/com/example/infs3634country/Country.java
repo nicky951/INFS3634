@@ -1,5 +1,6 @@
 package com.example.infs3634country;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -8,10 +9,11 @@ public class Country {
 
 
     @PrimaryKey
+    @NonNull
     public String name;
     public String region;
     public String capital;
-    public String[] timezones;
+    //public String[] timezones;
     //public String[] currencies;
     public String population;
     public String flag;
@@ -58,6 +60,7 @@ public class Country {
         this.capital = capital;
     }
 
+    /*
     public String[] getTimezone() {
         return timezones;
     }
@@ -65,7 +68,7 @@ public class Country {
     public void setTimezone(String[] timezones) {
         this.timezones = timezones;
     }
-
+    */
 
     public String getPopulation() {
         return population;
