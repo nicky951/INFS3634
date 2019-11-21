@@ -1256,6 +1256,10 @@
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/font_amiko_bold.xml.flat",
+        "source": "/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/res/font/amiko_bold.xml"
+    },
+    {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
@@ -1808,6 +1812,10 @@
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/color/abc_tint_switch_track.xml"
     },
     {
+        "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/layout_country_detail.xml.flat",
+        "source": "/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/res/layout/country_detail.xml"
+    },
+    {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
@@ -1850,6 +1858,10 @@
     {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/layout_design_layout_tab_text.xml.flat",
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/font_amiko.xml.flat",
+        "source": "/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/res/font/amiko.xml"
     },
     {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/drawable_btn_checkbox_checked_mtrl.xml.flat",
