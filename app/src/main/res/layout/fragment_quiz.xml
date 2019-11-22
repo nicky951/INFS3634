@@ -3,12 +3,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".quiz">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:id="@+id/question"
+            android:background="#C8E6C9"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="#000000"
+            android:text="What is your question?    Insert Here"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="50sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeStepGranularity="2sp">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/answer"
+            android:hint="Your Answer"
+            android:text=""
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/streak">
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/streak"
+            android:text="Streak:"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/point">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/point"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:textColor="#EF6C00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/streak"
+            app:layout_constraintEnd_toEndOf="parent">
+        </TextView>
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/check"
+            android:text="Check"
+            android:background="#42A5F5"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toTopOf="@id/streak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </Button>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

@@ -1137,6 +1137,7 @@ id add
 id alertTitle
 id all
 id always
+id answer
 id async
 id auto
 id backButton
@@ -1153,6 +1154,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id check
 id checkbox
 id checked
 id chronometer
@@ -1248,10 +1250,12 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id point
 id population
 id populationTitle
 id progress_circular
 id progress_horizontal
+id question
 id radio
 id region
 id regionLabel
@@ -1299,6 +1303,7 @@ id src_over
 id standard
 id start
 id status_bar_latest_event_content
+id streak
 id stretch
 id submenuarrow
 id submit_area

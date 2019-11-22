@@ -37,7 +37,6 @@ public class CountryDetail extends AppCompatActivity {
     private TextView name;
     private TextView region;
     private TextView capital;
-    private TextView timezone;
     private TextView currency;
     private TextView population;
     private ImageView flag;

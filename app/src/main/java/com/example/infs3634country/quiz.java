@@ -5,10 +5,18 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.room.Room;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.List;
+import java.util.Random;
 
 
 /**
@@ -20,6 +28,121 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class quiz extends Fragment {
+
+    private TextView question;
+    private EditText editText;
+    private Button check;
+    private TextView streak;
+
+    public quiz() {
+        // Required empty public constructor
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_quiz, container, false);
+
+        question = view.findViewById(R.id.question);
+        editText = view.findViewById(R.id.answer);
+        check = view.findViewById(R.id.check);
+        streak= view.findViewById(R.id.point);
+
+        CountryDatabase db = Room.databaseBuilder(getContext(), CountryDatabase.class , "database_name").allowMainThreadQueries().build();
+
+        final List<Country> countryBank = db.countryDao().getCountry();
+
+        final Random random = new Random();
+
+        final int countryRandom = random.nextInt(countryBank.size() - 1);
+        int questionRandom = random.nextInt(4 - 1) + 1;
+
+        final String[] questions = {""};
+        final String[] answers = {""};
+
+        if (questionRandom == 1) {
+            questions[0] = "What is the Capital of " + countryBank.get(countryRandom).getName() + " ?";
+            answers[0] = countryBank.get(countryRandom).getCapital();
+        } else if (questionRandom == 2) {
+            questions[0] = "What is the Population of " + countryBank.get(countryRandom).getName() + " ?";
+            answers[0] = countryBank.get(countryRandom).getPopulation();
+        } else if (questionRandom == 3) {
+            questions[0] = countryBank.get(countryRandom).getName()  + " is part of which region?";
+            answers[0] = countryBank.get(countryRandom).getRegion();
+        }
+
+        question.setText(questions[0]);
+
+        check.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                String userAnswer = editText.getText().toString();
+
+                int streakscore = 0;
+                int randomQuestion;
+                int randomCountry;
+
+                if(!userAnswer.equalsIgnoreCase(answers[0])) {
+
+                    Toast.makeText(getContext(),"The answer is " + answers[0], Toast.LENGTH_LONG).show();
+                    streak.setText(String.valueOf(streakscore));
+
+                    randomCountry = random.nextInt(countryBank.size() - 1);
+                    randomQuestion = random.nextInt(4 - 1) + 1;
+
+                    if (randomQuestion == 1) {
+                        questions[0] = "What is the Capital of " + countryBank.get(randomCountry).getName() + " ?";
+                        answers[0] = countryBank.get(randomCountry).getCapital();
+                    } else if (randomQuestion == 2) {
+                        questions[0] = "What is the Population of " + countryBank.get(randomCountry).getName() + " ?";
+                        answers[0] = countryBank.get(randomCountry).getPopulation();
+                    } else if (randomQuestion == 3) {
+                        questions[0] = countryBank.get(randomCountry).getName()  + " is part of which region?";
+                        answers[0] = countryBank.get(randomCountry).getRegion();
+                    }
+
+                    question.setText(questions[0]);
+                    editText.setText("");
+
+                } else if (userAnswer.equalsIgnoreCase(answers[0])){
+                    Toast.makeText(getContext(),"Correct!", Toast.LENGTH_SHORT).show();
+                    streakscore += 1;
+                    streak.setText(String.valueOf(streakscore));
+
+                    randomCountry = random.nextInt(countryBank.size() - 1);
+                    randomQuestion = random.nextInt(4 - 1) + 1;
+
+                    if (randomQuestion == 1) {
+                        questions[0] = "What is the Capital of " + countryBank.get(randomCountry).getName() + " ?";
+                        answers[0] = countryBank.get(randomCountry).getCapital();
+                    } else if (randomQuestion == 2) {
+                        questions[0] = "What is the Population of " + countryBank.get(randomCountry).getName() + " ?";
+                        answers[0] = countryBank.get(randomCountry).getPopulation();
+                    } else if (randomQuestion == 3) {
+                        questions[0] = countryBank.get(randomCountry).getName()  + " is part of which region?";
+                        answers[0] = countryBank.get(randomCountry).getRegion();
+                    }
+
+                    question.setText(questions[0]);
+                }
+            }
+        });
+
+        return view;
+
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+
+    }
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,9 +154,6 @@ public class quiz extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public quiz() {
-        // Required empty public constructor
-    }
 
     /**
      * Use this factory method to create a new instance of
@@ -53,21 +173,6 @@ public class quiz extends Fragment {
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quiz, container, false);
-    }
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
