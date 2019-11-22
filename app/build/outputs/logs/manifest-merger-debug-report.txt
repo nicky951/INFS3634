@@ -1,16 +1,17 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/8392647ca9531c13a8f0d6b7ad086e7e/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/1964611a1907e3ea07b40ce4c516c284/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.volley:volley:1.1.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/80cea8e976809dc8783f65fc7d5e4433/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:17:1-30:12
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/aac84969a2fb4fb82956e525ee4263e6/jetified-glide-4.9.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:2:1-12:12
 MERGED from [com.pixplicity.sharp:library:1.1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/dacef80c635f785e0832c32ed68fb195/library-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/add2bdb41de46d90e5d3bd4e75929820/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/dd07e922b5233b833d82ee834e6becf7/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -38,38 +39,41 @@ MERGED from [androidx.sqlite:sqlite:2.0.1] /Users/nicholasliang/.gradle/caches/t
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/420f294924962582b4c42c622af43461/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/66e997bde0b6ece28f7fd36f5f4a1584/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/9e826201835d091631296bd77f277fec/core-runtime-2.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/4aa5bb7d3fbed7b64c2df1ae23bce075/jetified-gifdecoder-4.9.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/d4ef17d609918d2a5f5a86d1ea02678f/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/9d52be8c254a228a91eaf05f51d52923/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/9093771a98b01557e81860f4122d7892/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/7ec682ca46f5c90ea9a9e0cba0c0310a/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/0554424e228349ffc3db0700d1324aa1/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/bad233a64070d55cab9a83b26afbf154/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/7acef2a7bfef3795312317efec15d83e/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.caverock:androidsvg-aar:1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5bf9b41e728a26bd04a1448948497098/androidsvg-aar-1.3/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:8:5-22:19
+ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:8:5-23:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/8392647ca9531c13a8f0d6b7ad086e7e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -78,14 +82,14 @@ MERGED from [com.android.volley:volley:1.1.1] /Users/nicholasliang/.gradle/cache
 MERGED from [com.android.volley:volley:1.1.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/80cea8e976809dc8783f65fc7d5e4433/jetified-volley-1.1.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:24:5-28:19
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/aac84969a2fb4fb82956e525ee4263e6/jetified-glide-4.9.0/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/aac84969a2fb4fb82956e525ee4263e6/jetified-glide-4.9.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:10:5-20
 MERGED from [androidx.core:core:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/4aa5bb7d3fbed7b64c2df1ae23bce075/jetified-gifdecoder-4.9.0/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/4aa5bb7d3fbed7b64c2df1ae23bce075/jetified-gifdecoder-4.9.0/AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -114,6 +118,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:19:27-74
+activity#com.example.infs3634country.CountryDetail
+ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:22:9-60
+	android:name
+		ADDED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:22:19-48
 uses-sdk
 INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
@@ -130,8 +138,10 @@ MERGED from [com.android.volley:volley:1.1.1] /Users/nicholasliang/.gradle/cache
 MERGED from [com.android.volley:volley:1.1.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/80cea8e976809dc8783f65fc7d5e4433/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
 MERGED from [androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/aac84969a2fb4fb82956e525ee4263e6/jetified-glide-4.9.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/aac84969a2fb4fb82956e525ee4263e6/jetified-glide-4.9.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.pixplicity.sharp:library:1.1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/dacef80c635f785e0832c32ed68fb195/library-1.1.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.pixplicity.sharp:library:1.1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/dacef80c635f785e0832c32ed68fb195/library-1.1.3/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/add2bdb41de46d90e5d3bd4e75929820/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -186,8 +196,6 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/nicholasli
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/66e997bde0b6ece28f7fd36f5f4a1584/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/9e826201835d091631296bd77f277fec/core-runtime-2.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/9e826201835d091631296bd77f277fec/core-runtime-2.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/4aa5bb7d3fbed7b64c2df1ae23bce075/jetified-gifdecoder-4.9.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/4aa5bb7d3fbed7b64c2df1ae23bce075/jetified-gifdecoder-4.9.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/d4ef17d609918d2a5f5a86d1ea02678f/interpolator-1.0.0/AndroidManifest.xml:20:5-44
@@ -198,12 +206,16 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/9093771a98b01557e81860f4122d7892/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/7ec682ca46f5c90ea9a9e0cba0c0310a/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/7ec682ca46f5c90ea9a9e0cba0c0310a/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/0554424e228349ffc3db0700d1324aa1/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/0554424e228349ffc3db0700d1324aa1/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/bad233a64070d55cab9a83b26afbf154/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/bad233a64070d55cab9a83b26afbf154/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/7acef2a7bfef3795312317efec15d83e/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/7acef2a7bfef3795312317efec15d83e/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.caverock:androidsvg-aar:1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5bf9b41e728a26bd04a1448948497098/androidsvg-aar-1.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.caverock:androidsvg-aar:1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5bf9b41e728a26bd04a1448948497098/androidsvg-aar-1.3/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
 INJECTED from /Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -220,3 +232,7 @@ ADDED from [androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/cache
 		ADDED from [androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:27:13-37
 	android:name
 		ADDED from [androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:26:13-74
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:16:22-76

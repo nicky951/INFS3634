@@ -1,6 +1,10 @@
 package com.example.infs3634country;
 
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +15,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+
+import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou;
 
 import java.util.List;
 
@@ -30,6 +36,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
                         .inflate(R.layout.country_summary, parent, false);
 
         CountryViewHolder countryViewHolder = new CountryViewHolder(view);
+
         return countryViewHolder;
     }
 
@@ -41,7 +48,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
 
         String url = countryAtPosition.getFlag();
 
-        Utils.fetchSvg(holder.itemView.getContext(), url, holder.flag);
+        GlideToVectorYou.justLoadImage((Activity) holder.itemView.getContext(), Uri.parse(url), holder.flag);
 
     }
 
@@ -81,6 +88,20 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
 
         public void bind(final Country country) {
             name.setText(country.getName());
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Context context = v.getContext();
+                    Intent intent = new Intent(context, CountryDetail.class);
+
+                    Country countrySelected = country;
+                    intent.putExtra("countrySelected", countrySelected);
+
+                    context.startActivity(intent);
+
+                }
+            });
         }
 
     }
