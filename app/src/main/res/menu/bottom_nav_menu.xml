@@ -10,10 +10,4 @@
         android:icon="@drawable/quiz"
         android:title="Quiz" />
 
-    <item
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/profile"
-        android:title="Profile"/>
-
-
 </menu>

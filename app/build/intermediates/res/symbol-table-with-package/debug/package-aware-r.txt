@@ -27,6 +27,10 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim slide_left
+anim slide_left2
+anim slide_right
+anim slide_right2
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1197,6 +1201,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
+id flagquestion
 id forever
 id fragment_slot
 id ghost_view
@@ -1229,7 +1234,6 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id nav_profile
 id nav_quiz
 id nav_search
 id nav_view
@@ -1421,7 +1425,6 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_quiz
 layout fragment_search
-layout fragment_user
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

@@ -716,6 +716,10 @@
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/interpolator-v21/mtrl_fast_out_linear_in.xml"
     },
     {
+        "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/anim_slide_left.xml.flat",
+        "source": "/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/res/anim/slide_left.xml"
+    },
+    {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/animator/design_fab_hide_motion_spec.xml"
     },
@@ -854,10 +858,6 @@
     {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/drawable_ic_mtrl_chip_checked_black.xml.flat",
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/drawable/ic_mtrl_chip_checked_black.xml"
-    },
-    {
-        "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/layout_fragment_user.xml.flat",
-        "source": "/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/res/layout/fragment_user.xml"
     },
     {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
@@ -1178,6 +1178,10 @@
     {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/anim_slide_right2.xml.flat",
+        "source": "/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/res/anim/slide_right2.xml"
     },
     {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
@@ -1620,6 +1624,10 @@
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/layout-v21/notification_template_icon_group.xml"
     },
     {
+        "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/anim_slide_left2.xml.flat",
+        "source": "/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/res/anim/slide_left2.xml"
+    },
+    {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -1730,6 +1738,10 @@
     {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/drawable-xxhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
+        "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/anim_slide_right.xml.flat",
+        "source": "/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/res/anim/slide_right.xml"
     },
     {
         "merged": "/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/res/merged/debug/anim_btn_checkbox_to_unchecked_box_inner_merged_animation.xml.flat",

@@ -9,10 +9,12 @@ import androidx.fragment.app.FragmentTransaction;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity implements search.OnFragmentInteractionListener, quiz.OnFragmentInteractionListener, user.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements search.OnFragmentInteractionListener, quiz.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +36,6 @@ public class MainActivity extends AppCompatActivity implements search.OnFragment
                     Fragment fragment = new quiz();
                     swapFragment(fragment);
                     return true;
-                } else if (menuItem.getItemId() == R.id.nav_profile) {
-                    Fragment fragment = new user();
-                    swapFragment(fragment);
-                    return true;
                 }
                 return false;
             }
@@ -56,5 +54,10 @@ public class MainActivity extends AppCompatActivity implements search.OnFragment
     @Override
     public void onFragmentInteraction(Uri uri) {
 
+    }
+
+    public void hide(View view) {
+        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }

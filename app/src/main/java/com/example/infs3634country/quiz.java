@@ -7,13 +7,17 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.room.Room;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou;
 
 import java.util.List;
 import java.util.Random;
@@ -33,6 +37,7 @@ public class quiz extends Fragment {
     private EditText editText;
     private Button check;
     private TextView streak;
+    private ImageView flag;
 
     public quiz() {
         // Required empty public constructor
@@ -47,6 +52,7 @@ public class quiz extends Fragment {
         editText = view.findViewById(R.id.answer);
         check = view.findViewById(R.id.check);
         streak= view.findViewById(R.id.point);
+        flag = view.findViewById(R.id.flagquestion);
 
         CountryDatabase db = Room.databaseBuilder(getContext(), CountryDatabase.class , "database_name").allowMainThreadQueries().build();
 
@@ -55,7 +61,7 @@ public class quiz extends Fragment {
         final Random random = new Random();
 
         final int countryRandom = random.nextInt(countryBank.size() - 1);
-        int questionRandom = random.nextInt(4 - 1) + 1;
+        int questionRandom = random.nextInt(5 - 1) + 1;
 
         final String[] questions = {""};
         final String[] answers = {""};
@@ -69,9 +75,20 @@ public class quiz extends Fragment {
         } else if (questionRandom == 3) {
             questions[0] = countryBank.get(countryRandom).getName()  + " is part of which region?";
             answers[0] = countryBank.get(countryRandom).getRegion();
+        } else if (questionRandom == 4) {
+            questions[0] = "Which country does this flag belong to?";
+
+            String url = countryBank.get(countryRandom).getFlag();
+
+            GlideToVectorYou.justLoadImage(getActivity(), Uri.parse(url), flag);
+
+            answers[0] = countryBank.get(countryRandom).getName();
+            System.out.println(answers[0]);
         }
 
         question.setText(questions[0]);
+
+        final int[] streakscore = {0};
 
         check.setOnClickListener(new View.OnClickListener() {
 
@@ -79,17 +96,18 @@ public class quiz extends Fragment {
             public void onClick(View v) {
                 String userAnswer = editText.getText().toString();
 
-                int streakscore = 0;
                 int randomQuestion;
                 int randomCountry;
 
                 if(!userAnswer.equalsIgnoreCase(answers[0])) {
 
-                    Toast.makeText(getContext(),"The answer is " + answers[0], Toast.LENGTH_LONG).show();
-                    streak.setText(String.valueOf(streakscore));
+                    Toast.makeText(getContext(),"The answer is " + answers[0], Toast.LENGTH_SHORT).show();
+                    streakscore[0] = 0;
+                    streak.setText(String.valueOf(streakscore[0]));
 
+                    flag.setImageResource(0);
                     randomCountry = random.nextInt(countryBank.size() - 1);
-                    randomQuestion = random.nextInt(4 - 1) + 1;
+                    randomQuestion = random.nextInt(5 - 1) + 1;
 
                     if (randomQuestion == 1) {
                         questions[0] = "What is the Capital of " + countryBank.get(randomCountry).getName() + " ?";
@@ -100,18 +118,48 @@ public class quiz extends Fragment {
                     } else if (randomQuestion == 3) {
                         questions[0] = countryBank.get(randomCountry).getName()  + " is part of which region?";
                         answers[0] = countryBank.get(randomCountry).getRegion();
+                    } else if (randomQuestion == 4) {
+                        questions[0] = "Which country does this flag belong to?";
+                        String url = countryBank.get(randomCountry).getFlag();
+                        GlideToVectorYou.justLoadImage(getActivity(), Uri.parse(url), flag);
+                        answers[0] = countryBank.get(randomCountry).getName();
                     }
 
+                    System.out.println(answers[0]);
                     question.setText(questions[0]);
                     editText.setText("");
 
                 } else if (userAnswer.equalsIgnoreCase(answers[0])){
                     Toast.makeText(getContext(),"Correct!", Toast.LENGTH_SHORT).show();
-                    streakscore += 1;
-                    streak.setText(String.valueOf(streakscore));
+                    streakscore[0] = streakscore[0] + 1;
+                    if (streakscore[0] == 1) {
+                        Toast toast = Toast.makeText(getContext(),"Achievement Obtained: Baby Steps", Toast.LENGTH_SHORT);
+                        toast.setGravity(Gravity.CENTER, 0, 0);
+                        toast.show();
 
+                    } else if(streakscore[0] == 3) {
+                        Toast toast = Toast.makeText(getContext(),"Achievement Obtained: Traveller", Toast.LENGTH_SHORT);
+                        toast.setGravity(Gravity.CENTER, 0, 0);
+                        toast.show();
+                    } else if (streakscore[0] == 6) {
+                        Toast toast = Toast.makeText(getContext(),"Achievement Obtained: Stop cheating no one is that good", Toast.LENGTH_SHORT);
+                        toast.setGravity(Gravity.CENTER, 0, 0);
+                        toast.show();
+                    } else if (streakscore[0] == 11) {
+                        Toast toast = Toast.makeText(getContext(),"Achievement Obtained: Geography God", Toast.LENGTH_SHORT);
+                        toast.setGravity(Gravity.CENTER, 0, 0);
+                        toast.show();
+                    } else if (streakscore[0] == 14) {
+                        Toast toast = Toast.makeText(getContext(),"Tony and Nicholas really wonder why you are still playing this.", Toast.LENGTH_SHORT);
+                        toast.setGravity(Gravity.CENTER, 0, 0);
+                        toast.show();
+                    }
+
+                    streak.setText(String.valueOf(streakscore[0]));
+
+                    flag.setImageResource(0);
                     randomCountry = random.nextInt(countryBank.size() - 1);
-                    randomQuestion = random.nextInt(4 - 1) + 1;
+                    randomQuestion = random.nextInt(5 - 1) + 1;
 
                     if (randomQuestion == 1) {
                         questions[0] = "What is the Capital of " + countryBank.get(randomCountry).getName() + " ?";
@@ -122,9 +170,16 @@ public class quiz extends Fragment {
                     } else if (randomQuestion == 3) {
                         questions[0] = countryBank.get(randomCountry).getName()  + " is part of which region?";
                         answers[0] = countryBank.get(randomCountry).getRegion();
+                    } else if (randomQuestion == 3) {
+                        questions[0] = "Which country does this flag belong to?";
+                        String url = countryBank.get(randomCountry).getFlag();
+                        GlideToVectorYou.justLoadImage(getActivity(), Uri.parse(url), flag);
+                        answers[0] = countryBank.get(randomCountry).getName();
                     }
 
+                    System.out.println(answers[0]);
                     question.setText(questions[0]);
+                    editText.setText("");
                 }
             }
         });

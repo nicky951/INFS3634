@@ -83,7 +83,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
                     intent.putExtra("countrySelected", countrySelected);
 
                     context.startActivity(intent);
-
+                    ((Activity) context).overridePendingTransition(R.anim.slide_left, R.anim.slide_right);
                 }
             });
         }

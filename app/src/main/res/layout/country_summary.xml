@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/countryname"
         android:text="Country Name"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:autoSizeTextType="uniform"
-        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMaxTextSize="20sp"
         app:autoSizeMinTextSize="10sp"
         app:autoSizeStepGranularity="2sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,7 +32,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
     </ImageView>
-
 
     <View
         android:id="@+id/bottomline"

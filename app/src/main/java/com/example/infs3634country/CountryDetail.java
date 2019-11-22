@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +43,7 @@ public class CountryDetail extends AppCompatActivity {
     private TextView currency;
     private TextView population;
     private ImageView flag;
+    private ImageButton backButton;
 
 
     @Override
@@ -53,6 +57,17 @@ public class CountryDetail extends AppCompatActivity {
         currency = findViewById(R.id.currencies);
         population = findViewById(R.id.population);
         flag = findViewById(R.id.countryImage);
+        backButton = findViewById(R.id.backButton);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                v.getContext().startActivity(intent);
+                ((Activity)v.getContext()).overridePendingTransition(R.anim.slide_left2, R.anim.slide_right2);
+            }
+        });
+
 
         final Intent intent = getIntent();
         final Country country = (Country) intent.getSerializableExtra("countrySelected");
