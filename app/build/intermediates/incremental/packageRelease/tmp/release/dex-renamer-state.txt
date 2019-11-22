@@ -1,4 +1,4 @@
-#Fri Nov 22 22:29:59 AEDT 2019
+#Fri Nov 22 22:46:12 AEDT 2019
 base.0=/Users/nicholasliang/Desktop/Android/INFS3634/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
