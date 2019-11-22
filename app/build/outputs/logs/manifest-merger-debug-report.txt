@@ -12,7 +12,6 @@ MERGED from [com.android.volley:volley:1.1.1] /Users/nicholasliang/.gradle/cache
 MERGED from [androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:17:1-30:12
 MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:2:1-12:12
-MERGED from [com.pixplicity.sharp:library:1.1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/dacef80c635f785e0832c32ed68fb195/library-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/add2bdb41de46d90e5d3bd4e75929820/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/dd07e922b5233b833d82ee834e6becf7/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -142,8 +141,6 @@ MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/
 MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.pixplicity.sharp:library:1.1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/dacef80c635f785e0832c32ed68fb195/library-1.1.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.pixplicity.sharp:library:1.1.3] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/dacef80c635f785e0832c32ed68fb195/library-1.1.3/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/add2bdb41de46d90e5d3bd4e75929820/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/add2bdb41de46d90e5d3bd4e75929820/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/dd07e922b5233b833d82ee834e6becf7/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41

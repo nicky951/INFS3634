@@ -18,12 +18,7 @@ public abstract class CountryDatabase extends RoomDatabase {
 
         if(instance == null) {
             instance = Room.databaseBuilder(context, CountryDatabase.class, "countryDb")
-                   .allowMainThreadQueries()   // <== IMPORTANT TO NOTE:
-                    //     This is NOT correct to do in a completed app.
-                    //     Next week we will fix it, but for now this
-                    //     line is necessary for the app to work.
-                    //     This line will basically allow the database
-                    //     queries to freeze the app.
+                   //.allowMainThreadQueries()   // <== IMPORTANT TO NOTE:
                     .build();
         }
         return instance;

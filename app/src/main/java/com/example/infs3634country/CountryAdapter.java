@@ -61,28 +61,12 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
 
         public View view;
         public TextView name;
-        /*
-        public TextView region;
-        public TextView capital;
-        public TextView timezone;
-        public TextView currency;
-        public TextView population;
-        */
-
         public ImageView flag;
 
         public CountryViewHolder(@NonNull View itemView) {
             super(itemView);
             view = itemView;
             name = view.findViewById(R.id.countryname);
-            /*
-            region = view.findViewById(R.id.regionLabel);
-            capital = view.findViewById(R.id.capital);
-            timezone = view.findViewById(R.id.timezone);
-            currency = view.findViewById(R.id.currencies);
-            population = view.findViewById(R.id.population);
-            */
-
             flag = view.findViewById(R.id.countryflag);
         }
 

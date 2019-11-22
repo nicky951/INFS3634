@@ -1321,8 +1321,6 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
-id timezone
-id timezoneTitle
 id title
 id titleDividerNoCustom
 id title_template

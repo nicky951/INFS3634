@@ -8,23 +8,29 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou;
-import com.pixplicity.sharp.Sharp;
+import com.google.gson.Gson;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.Currency;
+import java.util.List;
 
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 
 public class CountryDetail extends AppCompatActivity {
 
@@ -32,10 +38,10 @@ public class CountryDetail extends AppCompatActivity {
     private TextView region;
     private TextView capital;
     private TextView timezone;
-    private TextView currencies;
+    private TextView currency;
     private TextView population;
     private ImageView flag;
-    private static OkHttpClient httpClient;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +51,7 @@ public class CountryDetail extends AppCompatActivity {
         name = findViewById(R.id.countryName1);
         region = findViewById(R.id.region);
         capital = findViewById(R.id.capital);
-        timezone = findViewById(R.id.timezone);
-        currencies = findViewById(R.id.currencies);
+        currency = findViewById(R.id.currencies);
         population = findViewById(R.id.population);
         flag = findViewById(R.id.countryImage);
 
@@ -60,9 +65,37 @@ public class CountryDetail extends AppCompatActivity {
 
         String url = country.getFlag();
 
-
         GlideToVectorYou.justLoadImage(this, Uri.parse(url), flag);
-        System.out.println(url);
+
+        final String currencyRequestUrl = "https://restcountries.eu/rest/v2/name/" + country.getName();
+
+        final RequestQueue requestQueue =  Volley.newRequestQueue(this);
+
+        Response.Listener<String> responseListener = new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+
+                Gson gson = new Gson();
+                currencyResponse[] currencyResponse = gson.fromJson(response, currencyResponse[].class);
+                List<currencies> currencies = currencyResponse[0].getCurrencies();
+
+                currency.setText(currencies.get(0).getCode());
+            }
+        };
+
+        Response.ErrorListener errorListener = new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),"The request failed: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                requestQueue.stop();
+            }
+        };
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, currencyRequestUrl, responseListener,
+                errorListener);
+
+        requestQueue.add(stringRequest);
 
     }
 }

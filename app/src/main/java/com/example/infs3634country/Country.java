@@ -15,8 +15,6 @@ public class Country implements Serializable {
     public String name;
     public String region;
     public String capital;
-    //public String[] timezones;
-    //public String[] currencies;
     public String population;
     public String flag;
 
