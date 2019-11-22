@@ -1,5 +1,6 @@
 package com.example.infs3634country;
 
+//Country response class
 public class CountryResponse {
 
     public String getName() {

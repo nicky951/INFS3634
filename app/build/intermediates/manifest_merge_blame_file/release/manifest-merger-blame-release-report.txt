@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.infs3634country"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:6:22-64
+12
+13    <!--
+14    Allows Glide to monitor connectivity status and restart failed requests if users go from a
+15    a disconnected to a connected network state.
+16    -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:16:5-79
+17-->[com.github.corouteam:GlideToVectorYou:v2.0.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/cefa7e7646ed0cd08ce69673064f26ac/GlideToVectorYou-v2.0.0/AndroidManifest.xml:16:22-76
+18
+19    <application
+19-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:8:5-23:19
+20        android:allowBackup="true"
+20-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:9:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:18-86
+22        android:icon="@mipmap/ic_launcher"
+22-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:10:9-43
+23        android:label="@string/app_name"
+23-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:11:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:12:9-54
+25        android:supportsRtl="true"
+25-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:13:9-35
+26        android:theme="@style/AppTheme" >
+26-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:14:9-40
+27        <activity android:name="com.example.infs3634country.MainActivity" >
+27-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:15:9-21:20
+27-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:15:19-47
+28            <intent-filter>
+28-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:16:13-20:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:17:17-69
+29-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:17:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:19:17-77
+31-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:19:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity android:name="com.example.infs3634country.CountryDetail" />
+34-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:22:9-60
+34-->/Users/nicholasliang/Desktop/Android/INFS3634/app/src/main/AndroidManifest.xml:22:19-48
+35
+36        <service
+36-->[androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:25:9-27:40
+37            android:name="androidx.room.MultiInstanceInvalidationService"
+37-->[androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:26:13-74
+38            android:exported="false" />
+38-->[androidx.room:room-runtime:2.2.1] /Users/nicholasliang/.gradle/caches/transforms-2/files-2.1/854b47ac59f20b6a0c922bde7b1e0434/room-runtime-2.2.1/AndroidManifest.xml:27:13-37
+39    </application>
+40
+41</manifest>

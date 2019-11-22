@@ -1,5 +1,6 @@
 package com.example.infs3634country;
 
+//Currency class
 public class currencies {
 
     public String getCode() {

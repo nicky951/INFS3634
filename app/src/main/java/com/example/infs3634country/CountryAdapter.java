@@ -75,6 +75,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
         public void bind(final Country country) {
             name.setText(country.getName());
 
+            //Onclick listener to bring in detailed view
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

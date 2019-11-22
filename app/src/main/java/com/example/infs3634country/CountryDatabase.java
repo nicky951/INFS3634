@@ -9,6 +9,7 @@ import androidx.room.RoomDatabase;
 
 import com.example.infs3634country.Country;
 
+//Database of countries pulled from API
 @Database(entities =  {Country.class}, version =1)
 public abstract class CountryDatabase extends RoomDatabase {
     public abstract CountryDao countryDao();
@@ -17,9 +18,7 @@ public abstract class CountryDatabase extends RoomDatabase {
     public static CountryDatabase getInstance(Context context) {
 
         if(instance == null) {
-            instance = Room.databaseBuilder(context, CountryDatabase.class, "countryDb")
-                   //.allowMainThreadQueries()   // <== IMPORTANT TO NOTE:
-                    .build();
+            instance = Room.databaseBuilder(context, CountryDatabase.class, "countryDb").build();
         }
         return instance;
     }

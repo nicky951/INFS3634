@@ -54,18 +54,19 @@ public class quiz extends Fragment {
         streak= view.findViewById(R.id.point);
         flag = view.findViewById(R.id.flagquestion);
 
+        //Pull data from stored database
         CountryDatabase db = Room.databaseBuilder(getContext(), CountryDatabase.class , "database_name").allowMainThreadQueries().build();
-
         final List<Country> countryBank = db.countryDao().getCountry();
 
+        //random number generator
         final Random random = new Random();
-
         final int countryRandom = random.nextInt(countryBank.size() - 1);
         int questionRandom = random.nextInt(5 - 1) + 1;
 
         final String[] questions = {""};
         final String[] answers = {""};
 
+        //Generated random numbers control random questions about random countries
         if (questionRandom == 1) {
             questions[0] = "What is the Capital of " + countryBank.get(countryRandom).getName() + " ?";
             answers[0] = countryBank.get(countryRandom).getCapital();
@@ -80,6 +81,7 @@ public class quiz extends Fragment {
 
             String url = countryBank.get(countryRandom).getFlag();
 
+            //Load image for flag question
             GlideToVectorYou.justLoadImage(getActivity(), Uri.parse(url), flag);
 
             answers[0] = countryBank.get(countryRandom).getName();
@@ -88,6 +90,7 @@ public class quiz extends Fragment {
 
         question.setText(questions[0]);
 
+        //Streak counter
         final int[] streakscore = {0};
 
         check.setOnClickListener(new View.OnClickListener() {
@@ -99,6 +102,7 @@ public class quiz extends Fragment {
                 int randomQuestion;
                 int randomCountry;
 
+                //Checking answer
                 if(!userAnswer.equalsIgnoreCase(answers[0])) {
 
                     Toast.makeText(getContext(),"The answer is " + answers[0], Toast.LENGTH_SHORT).show();

@@ -34,7 +34,7 @@ import java.util.Arrays;
 import java.util.Currency;
 import java.util.List;
 
-
+//Detailed Country Activity
 public class CountryDetail extends AppCompatActivity {
 
     private TextView name;
@@ -59,6 +59,7 @@ public class CountryDetail extends AppCompatActivity {
         flag = findViewById(R.id.countryImage);
         backButton = findViewById(R.id.backButton);
 
+        //Back button onclick listener that goes back to list of countries
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +70,7 @@ public class CountryDetail extends AppCompatActivity {
         });
 
 
+        //Get the country object that was passed in from the recyclerview
         final Intent intent = getIntent();
         final Country country = (Country) intent.getSerializableExtra("countrySelected");
 
@@ -79,8 +81,10 @@ public class CountryDetail extends AppCompatActivity {
 
         String url = country.getFlag();
 
+        //Github libary to load svg images
         GlideToVectorYou.justLoadImage(this, Uri.parse(url), flag);
 
+        //Request to api
         final String currencyRequestUrl = "https://restcountries.eu/rest/v2/name/" + country.getName();
 
         final RequestQueue requestQueue =  Volley.newRequestQueue(this);
@@ -90,10 +94,12 @@ public class CountryDetail extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
 
+                //Parsing json to list of countries
                 Gson gson = new Gson();
                 currencyResponse[] currencyResponse = gson.fromJson(response, currencyResponse[].class);
                 List<currencies> currencies = currencyResponse[0].getCurrencies();
 
+                //Setting value for currency
                 currency.setText(currencies.get(0).getCode());
             }
         };

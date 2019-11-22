@@ -46,8 +46,7 @@ public class search extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
-
+        //Prompt to let images load
         Toast.makeText(getContext(),"Please scroll slowly and allow Images to load", Toast.LENGTH_SHORT).show();
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         recyclerView = view.findViewById(R.id.searchRecycler);
@@ -58,8 +57,8 @@ public class search extends Fragment {
 
         final CountryAdapter countryAdapter = new CountryAdapter();
 
+        //Url for API for all countries
         final RequestQueue requestQueue =  Volley.newRequestQueue(getActivity());
-
         String url = "https://restcountries.eu/rest/v2/all";
 
         Response.Listener<String> responseListener = new Response.Listener<String>() {
@@ -67,11 +66,10 @@ public class search extends Fragment {
             @Override
             public void onResponse(String response) {
 
+                //Pull data, parse it and store in db
                 Gson gson = new Gson();
                 Country[] countries = gson.fromJson(response, Country[].class);
                 List<Country> countryList = Arrays.asList(countries);
-
-                System.out.println(countries[0].getName());
 
                 CountryDatabase db = Room.databaseBuilder(getContext(), CountryDatabase.class , "database_name").allowMainThreadQueries().build();
 
@@ -80,7 +78,6 @@ public class search extends Fragment {
 
                 countryAdapter.setData(db.countryDao().getCountry());
                 recyclerView.setAdapter(countryAdapter);
-
             }
 
 

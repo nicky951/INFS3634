@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements search.OnFragment
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Logic to swap fragment
         Fragment fragment = new search();
         swapFragment(fragment);
 
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements search.OnFragment
         });
     }
 
+    //Fragment swap helper method
     private void swapFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements search.OnFragment
 
     }
 
+    //Used to hide keyboard when user clicks screen
     public void hide(View view) {
         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
