@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
+//Country class implements Serializable so that it can be passed through as an object in an intent
 @Entity
 public class Country implements Serializable {
 
@@ -25,16 +26,6 @@ public class Country implements Serializable {
     public void setFlag(String flag) {
         this.flag = flag;
     }
-
-    /*
-    public String[] getCurrencies() {
-        return currencies;
-    }
-
-    public void setCurrencies(String[] currencies) {
-        this.currencies = currencies;
-    }
-    */
 
     public String getName() {
         return name;
@@ -59,16 +50,6 @@ public class Country implements Serializable {
     public void setCapital(String capital) {
         this.capital = capital;
     }
-
-    /*
-    public String[] getTimezone() {
-        return timezones;
-    }
-
-    public void setTimezone(String[] timezones) {
-        this.timezones = timezones;
-    }
-    */
 
     public String getPopulation() {
         return population;

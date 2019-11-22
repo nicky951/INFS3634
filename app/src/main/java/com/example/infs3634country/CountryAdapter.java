@@ -20,6 +20,7 @@ import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou;
 
 import java.util.List;
 
+//Adapter for countries displaying in recyclerview
 public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryViewHolder> {
 
     private List<Country> countryToAdapt;
@@ -48,6 +49,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
 
         String url = countryAtPosition.getFlag();
 
+        //github library that helps load SVG image files. These are not supported by androids default libraries
         GlideToVectorYou.justLoadImage((Activity) holder.itemView.getContext(), Uri.parse(url), holder.flag);
 
     }

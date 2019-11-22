@@ -17,10 +17,11 @@
 
             <TextView
                 android:id="@+id/countryName1"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:text="Country"
+                android:gravity="center"
                 android:textColor="#F44336"
                 android:textSize="35dp"
                 android:textStyle="bold"
@@ -35,8 +36,10 @@
                 android:layout_marginStart="16dp"
                 android:backgroundTint="#009688"
                 android:src="@drawable/search"
-                app:layout_constraintTop_toTopOf="@id/countryName1"
+                app:layout_constraintEnd_toStartOf="@id/countryName1"
                 app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@mipmap/ic_launcher_round" />
 
             <TextView
